@@ -6,7 +6,7 @@
 /*Começo header*/
 
 
-header{
+header,footer{
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(4px);
 }
@@ -32,6 +32,41 @@ span.destaque{
     color: paleturquoise;
 }
 
-
 /*fim header*/
+
+/*main*/
+h3,p{
+    color: white;
+
+}
+
+.capa{
+    border-radius: 5px;
+}
+
+.capa:hover{
+    border: 1px solid paleturquoise;
+    
+}
+
+/*rodape*/
+.titulo-rodape{
+    color: white;
+}
+
+.icone-rodape{
+    color: white;
+}
+
+/*modal*/
+
+.cover-art:hover{
+    cursor: pointer;
+}
+
+.modal-title{
+    color: white;
+}
+
+
 
