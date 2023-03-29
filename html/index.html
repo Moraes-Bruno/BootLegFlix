@@ -22,19 +22,31 @@
     
             <ul class="nav col-12 gap-3 col-lg-auto me-lg-auto mb-2 justify-content-center  m-auto mb-md-0">
                 <li class=><a href="series.html" class="nav-link px-2  header-link ">  <i class="bi bi-tv "></i> Séries</a></li>
-
+                  
                 <li><a href="filmes.html" class="nav-link px-2  header-link "> <i class="bi bi-film"></i> Filmes</a></li>
                   
-                <li><a href="generos.html" class="nav-link px-2  header-link "> <i class="bi bi-tags"></i> Gêneros</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px2 header-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-tags"></i> Gêneros
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Ação</a></li>
+                    <li><a href="" class="dropdown-item">Aventura</a></li>  
+                    <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+                    <li><a href="" class="dropdown-item">Policial</a></li> 
+                    <li><a href="" class="dropdown-item">Psicologico</a></li> 
+                  </ul>
+                </li>
             </ul>
     
             <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+              <input type="search" class="form-control form-control-dark text-bg-light" placeholder="Buscar..." aria-label="Search">
             </form>
     
             <div class="text-end">
-              <button type="button" class="btn btn-outline-light me-2"><a href="login.html" class="link-light text-decoration-none">Login</a></button>
-              <button type="button" class="btn btn-warning"><a href="sign-up.html" class="link-dark text-decoration-none">Sign-up</a></button>
+              <button type="button" class="btn btn-outline-light me-2 fw-bold"  data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+             
+              <button type="button" class="btn btn-primary link-light fw-bold " data-bs-toggle="modal" data-bs-target="#cadastro">Cadastrar</button>
             </div>
           </div>
         </div>
@@ -139,6 +151,69 @@
       </ul>
     </footer>
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Senha</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"><a href="logged.html " class="fw-bold link-light text-decoration-none">Login</a></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="cadastro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark ">
+        <div class="modal-header">
+          <h5 class="modal-title text-center " id="exampleModalLabel">Cadastrar</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body ">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Nome de Usuario</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Senha</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit"><a href="logged.html" class="link-light fw-bold text-decoration-none" >Cadastar</a></button>
+            <small class="link-light ">Clicando em se Cadastar voce aceita os termos de uso.</small>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3 link-light">Ou use Outra Conta</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-3" type="submit">
+              <i class="bi bi-twitter"></i>
+              Cadastrar com Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <i class="bi bi-facebook"></i>
+              Cadastar com Facebook
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
